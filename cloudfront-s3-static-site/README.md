@@ -23,7 +23,7 @@ This guide outlines the steps to host a static website on AWS S3 using CloudFron
    - Click **Upload** and add your HTML, CSS, JavaScript, and other website files.
    - Ensure that all files are publicly accessible by setting appropriate permissions.
 
-   ![Uploading Files to S3](/images/ss-1.jpeg)
+   ![Uploading Files to S3](/cloudfront-s3-static-site/images/ss-1.jpeg)
 
 ### 3️⃣ **Set Up CloudFront to Cache Content**
    - Go to the **CloudFront** service in the AWS console.
