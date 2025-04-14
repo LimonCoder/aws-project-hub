@@ -32,21 +32,24 @@ This guide outlines the steps to host a static website on AWS S3 using CloudFron
    - Enable **Caching** for better performance.
    - Set **Viewer Protocol Policy** to **Redirect HTTP to HTTPS** for secure connections.
 
-   ![CloudFront Setup](path/to/your/screenshot3.png)
+   ![CloudFront Setup](/cloudfront-s3-static-site/images/ss-2.jpeg)
 
-### 4️⃣ **Link CloudFront with AWS Certificate Manager for SSL**
+### 4️⃣ **Link CloudFront with Route 53 and SSL Certificate**
    - Go to **AWS Certificate Manager (ACM)**.
-   - Request a new SSL certificate for your domain (e.g., `www.mysite.com`).
+   - Request a new SSL certificate for your domain (`dtopnotch.com`).
+     - Follow the process to validate the domain ownership.
    - After validation, go back to your **CloudFront** distribution settings and associate the SSL certificate with the distribution.
    - Ensure that **SSL/TLS Protocols** are set to the latest (e.g., TLSv1.2 or higher).
+   - Go to **Route 53** in the AWS console.
+   - Create a **new hosted zone** for your domain (`mysite.com`) if it doesn't exist.
+   - Add a **CNAME record** in Route 53 that points your domain (`dtopnotch.com`) to the CloudFront distribution URL (e.g., `d1234.cloudfront.net`).
 
-   ![SSL Setup in CloudFront](path/to/your/screenshot4.png)
+   ![SSL Setup in CloudFront](cloudfront-s3-static-site/images/ss-2.jpeg)
+
 
 ### 5️⃣ **Test Your Website**
    - Once the CloudFront distribution is deployed (it may take a few minutes), access your website via the CloudFront URL.
    - You should see your static website, now fast and secure!
-
-   ![Testing Website](path/to/your/screenshot5.png)
 
 ## 🔹 Key Learnings
 
