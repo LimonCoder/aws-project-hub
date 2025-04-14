@@ -12,7 +12,7 @@ This guide outlines the steps to host a static website on AWS S3 using CloudFron
 
 ### 1️⃣ **Create an S3 Bucket for Static Website Hosting**
    - Go to the **S3** service in the AWS console.
-   - Click **Create bucket** and enter a unique name for your bucket (e.g., `my-static-website`).
+   - Click **Create bucket** and enter a unique name for your bucket (e.g., `dtopnotch.com`).
    - Under **Bucket Settings for Block Public Access**, ensure **Block all public access** is turned off to allow public access to your files.
    - Enable **Static website hosting** under the bucket settings.
      - Set the **Index Document** (e.g., `index.html`) and **Error Document** (e.g., `error.html`).
@@ -42,7 +42,7 @@ This guide outlines the steps to host a static website on AWS S3 using CloudFron
    - Ensure that **SSL/TLS Protocols** are set to the latest (e.g., TLSv1.2 or higher).
    - Go to **Route 53** in the AWS console.
    - Create a **new hosted zone** for your domain (`mysite.com`) if it doesn't exist.
-   - Add a **CNAME record** in Route 53 that points your domain (`dtopnotch.com`) to the CloudFront distribution URL (e.g., `d1234.cloudfront.net`).
+   - Add a **CNAME record** in Route 53 that points your domain (`dtopnotch.com`) to the CloudFront distribution URL.
 
    ![SSL Setup in CloudFront](/cloudfront-s3-static-site/images/ss-3.jpeg)
 
