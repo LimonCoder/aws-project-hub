@@ -44,7 +44,7 @@ This guide outlines the steps to host a static website on AWS S3 using CloudFron
    - Create a **new hosted zone** for your domain (`mysite.com`) if it doesn't exist.
    - Add a **CNAME record** in Route 53 that points your domain (`dtopnotch.com`) to the CloudFront distribution URL (e.g., `d1234.cloudfront.net`).
 
-   ![SSL Setup in CloudFront](/cloudfront-s3-static-site/images/ss-2.jpeg)
+   ![SSL Setup in CloudFront](/cloudfront-s3-static-site/images/ss-3.jpeg)
 
 
 ### 5️⃣ **Test Your Website**
